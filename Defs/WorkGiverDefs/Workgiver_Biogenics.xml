@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<WorkGivers>
+
+
+  <WorkGiverDef>
+    <defName>DoBillsBiogenicWorkbench</defName>
+	<label>Splice genomes for SCIENCE</label>
+    <giverClass>WorkGiver_DoBill</giverClass>
+    <workType>Crafting</workType>
+    <priorityInType>130</priorityInType>
+    <fixedBillGiverDefs>
+	  <li>TableBiogenics</li>
+	</fixedBillGiverDefs>
+    <verb>assemble</verb>
+    <gerund>assembling</gerund>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+  </WorkGiverDef>
+
+</WorkGivers>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ThingDefs>
+
+
+<ThingDef ParentName="BioGenBase">
+<defName>PFVATSImplant</defName>
+<label>VATS Implant</label>
+<description>A variation of the VaultTec Assisted Targeting System that is implanted directly into the user's brain. </description>
+<graphicData>
+<texPath>Things/Item/Implant/Implant</texPath>
+<graphicClass>Graphic_Single</graphicClass>
+</graphicData>
+<statBases>
+<MarketValue>32</MarketValue>
+</statBases>
+<techHediffsTags>
+      <li>Advanced</li>
+    </techHediffsTags>
+</ThingDef>
+
+	<ThingDef ParentName="BioGenBase">
+		<defName>XenBionicLeg</defName>
+		<label>xen bionic leg</label>
+		<description>Impressing technology allows the user to move around faster than ever.</description>
+		<graphicData>
+			<texPath>BodyParts/BioPart</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>70</MarketValue>
+		</statBases>
+		<techHediffsTags>
+			<li>Advanced</li>
+		</techHediffsTags>
+	</ThingDef>
+	
+		<ThingDef ParentName="BioGenBase">
+		<defName>XenElvisPelvis</defName>
+		<label>xen's elvis pelvis</label>
+		<description>Impressing technology allows the user to do pelvic thrusts which mysteriously enhance all their abilities. UH HUH! PRETTY MOMMAH!</description>
+		<graphicData>
+			<texPath>BodyParts/BioPart</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>70</MarketValue>
+		</statBases>
+		<techHediffsTags>
+			<li>Advanced</li>
+		</techHediffsTags>
+	</ThingDef>
+	
+
+</ThingDefs>

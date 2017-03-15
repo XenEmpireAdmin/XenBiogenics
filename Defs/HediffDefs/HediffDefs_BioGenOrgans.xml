@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+   
+   <HediffDef Name="addedPartBiogenic" Abstract="True">
+      <hediffClass>Hediff_AddedPart</hediffClass>
+      <isBad>false</isBad>
+      <defaultLabelColor>(0.05,0.63,0.95)</defaultLabelColor>
+   </HediffDef>
+
+   <!-- Added body parts -->
+   
+   <HediffDef ParentName="addedPartBiogenic">
+      <defName>EnhancedBrain</defName>
+      <label>Brain Enhancement</label>
+	      <comps>
+      <li Class="HediffCompProperties_VerbGiver">
+        <verbs>
+          <li>
+            <verbClass>Verb_MeleeAttack</verbClass>
+            <defaultCooldownTime>1.2</defaultCooldownTime>
+            <meleeDamageBaseAmount>15</meleeDamageBaseAmount>
+            <meleeDamageDef>Bio_Psionic</meleeDamageDef>
+          </li>
+        </verbs>  
+      </li>
+    </comps>
+      <spawnThingOnRemoved>EnhancedBrain</spawnThingOnRemoved>
+      <addedPartProps>
+         <isBionic>false</isBionic>
+         <partEfficiency>1.2</partEfficiency>
+      </addedPartProps>
+	  	<stages>
+		<li>
+         <capMods>
+            <li>
+               <capacity>Manipulation</capacity>
+               <offset>0.5</offset>
+            </li>
+			 <li>
+               <capacity>Moving</capacity>
+               <offset>0.12</offset>
+            </li>
+			 <li>
+               <capacity>Hearing</capacity>
+               <offset>0.05</offset>
+            </li>
+			 <li>
+               <capacity>Talking</capacity>
+               <offset>0.03</offset>
+            </li>
+			<li>
+               <capacity>Sight</capacity>
+               <offset>0.1</offset>
+            </li>
+         </capMods>
+		</li>	 
+      </stages>
+   </HediffDef>
+   
+   <HediffDef ParentName="addedPartBiogenic">
+      <defName>BiogenicLung</defName>
+      <label>biogenic lung</label>
+      <spawnThingOnRemoved>BiogenicLung</spawnThingOnRemoved>
+      <addedPartProps>
+         <isBionic>false</isBionic>
+         <partEfficiency>1.2</partEfficiency>
+      </addedPartProps>
+      <stages>
+		<li>
+         <capMods>
+            <li>
+               <capacity>Breathing</capacity>
+               <offset>0.25</offset>
+            </li>
+            <li>
+               <capacity>Moving</capacity>
+               <offset>0.12</offset>
+            </li>
+         </capMods>
+		</li>	 
+      </stages>
+   </HediffDef>
+   
+   <HediffDef ParentName="addedPartBiogenic">
+      <defName>BiogenicStomach</defName>
+      <label>biogenic stomach</label>
+      <spawnThingOnRemoved>BiogenicStomach</spawnThingOnRemoved>
+      <addedPartProps>
+         <isBionic>false</isBionic>
+         <partEfficiency>1.2</partEfficiency>
+      </addedPartProps>
+      <stages>
+		<li>
+         <capMods>
+            <li>
+               <capacity>Eating</capacity>
+               <offset>0.3</offset>
+            </li>
+         </capMods>
+		</li>	 
+      </stages>
+   </HediffDef>
+   
+   <HediffDef ParentName="addedPartBiogenic">
+      <defName>BiogenicLiver</defName>
+      <label>biogenic liver</label>
+      <spawnThingOnRemoved>BiogenicLiver</spawnThingOnRemoved>
+      <addedPartProps>
+         <isBionic>false</isBionic>
+         <partEfficiency>1.2</partEfficiency>
+      </addedPartProps>
+      <stages>
+		<li>
+         <capMods>
+            <li>
+               <capacity>BloodFiltration</capacity>
+               <offset>0.4</offset>
+            </li>
+         </capMods>
+		</li>	 
+      </stages>
+   </HediffDef>
+   
+   <HediffDef ParentName="addedPartBiogenic">
+      <defName>BiogenicKidney</defName>
+      <label>biogenic kidney</label>
+      <spawnThingOnRemoved>BiogenicKidney</spawnThingOnRemoved>
+      <addedPartProps>
+         <isBionic>false</isBionic>
+         <partEfficiency>1.2</partEfficiency>
+      </addedPartProps>
+      <stages>
+		<li>
+         <capMods>
+            <li>
+               <capacity>BloodFiltration</capacity>
+               <offset>0.3</offset>
+            </li>
+         </capMods>
+		</li>	 
+      </stages>
+   </HediffDef>
+   
+   <HediffDef ParentName="addedPartBiogenic">
+      <defName>BiogenicHeart</defName>
+      <label>biogenic heart</label>
+      <spawnThingOnRemoved>BiogenicHeart</spawnThingOnRemoved>
+      <addedPartProps>
+         <isBionic>false</isBionic>
+         <partEfficiency>1.2</partEfficiency>
+      </addedPartProps>
+      <stages>
+		<li>
+         <capMods>
+            <li>
+               <capacity>BloodPumping</capacity>
+               <offset>0.35</offset>
+            </li>
+            <li>
+               <capacity>Moving</capacity>
+               <offset>0.15</offset>
+            </li>
+            <li>
+               <capacity>Manipulation</capacity>
+               <offset>0.15</offset>
+            </li>
+         </capMods>
+		</li>	 
+      </stages>
+   </HediffDef>
+   
+</Defs>

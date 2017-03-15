@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+<HediffDef Abstract="True" Name="ImplantHediffBase">
+<hediffClass>Hediff_Implant</hediffClass>
+<defaultLabelColor>(0.65, 0.3, 0.9)</defaultLabelColor>
+<isBad>false</isBad>
+</HediffDef>
+
+<HediffDef ParentName="ImplantHediffBase">
+<defName>PFVATS</defName>
+<label>VATS Implant</label>
+<stages>
+<li>
+<capMods>
+<li>
+<capacity>Consciousness</capacity>
+<offset>0.3</offset>
+</li>
+<li>
+<capacity>Sight</capacity>
+<offset>0.3</offset>
+</li>
+<li>
+<capacity>Manipulation</capacity>
+<offset>0.4</offset>
+</li>
+<li>
+<capacity>Moving</capacity>
+<offset>0.5</offset>
+</li>
+<li>
+<capacity>Talking</capacity>
+<offset>0.4</offset>
+</li>
+<li>
+<capacity>Hearing</capacity>
+<offset>0.4</offset>
+</li>
+<li>
+<capacity>BloodFiltration</capacity>
+<offset>0.4</offset>
+</li>
+</capMods>
+</li>
+</stages>
+
+<spawnThingOnRemoved>PFVATSImplant</spawnThingOnRemoved>
+
+</HediffDef>
+
+
+
+
+
+  <HediffDef ParentName="ImplantHediffXen">
+      <defName>XenBionicLeg</defName>
+      <label>xen bionic leg</label>
+      <spawnThingOnRemoved>XenBionicLeg</spawnThingOnRemoved>
+      <addedPartProps>
+         <partEfficiency>1.5</partEfficiency>
+      </addedPartProps>
+      <stages>
+		<li>
+         <capMods>
+            <li>
+               <capacity>Moving</capacity>
+               <offset>0.67</offset>
+            </li>
+         </capMods>
+		</li>	 
+      </stages>
+   </HediffDef>
+   
+   
+   <HediffDef Abstract="True" Name="ImplantHediffXen">
+<hediffClass>Hediff_AddedPart</hediffClass>
+<defaultLabelColor>(0.05, 0.63, 0.95)</defaultLabelColor>
+<isBad>false</isBad>
+<addedPartProps>
+<isSolid>true</isSolid>
+</addedPartProps>
+</HediffDef>
+
+
+   <HediffDef ParentName="ImplantHediffXen">
+<defName>XenPelvis</defName>
+<label>Xen's Bionic Rockabilly Pelvis</label>
+		<comps>
+			<li Class="HediffCompProperties_VerbGiver">
+				<verbs>
+					<li>
+						<verbClass>Verb_MeleeAttack</verbClass>
+						<defaultCooldownTime>0.5</defaultCooldownTime>
+						<meleeDamageBaseAmount>12</meleeDamageBaseAmount>
+						<meleeDamageDef>Blunt</meleeDamageDef>
+					</li>
+				</verbs>
+			</li>
+		</comps>
+		<addedPartProps>
+			<isBionic>true</isBionic>
+			<partEfficiency>2.0</partEfficiency>
+		</addedPartProps>
+<stages>
+<li>
+<capMods>
+<li>
+<capacity>Consciousness</capacity>
+<offset>1.0</offset>
+</li>
+<li>
+<capacity>Sight</capacity>
+<offset>1.0</offset>
+</li>
+<li>
+<capacity>Manipulation</capacity>
+<offset>1.0</offset>
+</li>
+<li>
+<capacity>Moving</capacity>
+<offset>4.0</offset>
+</li>
+<li>
+<capacity>Talking</capacity>
+<offset>0.5</offset>
+</li>
+<li>
+<capacity>Hearing</capacity>
+<offset>1.0</offset>
+</li>
+<li>
+<capacity>BloodFiltration</capacity>
+<offset>1.9</offset>
+</li>
+</capMods>
+</li>
+</stages>
+
+<spawnThingOnRemoved>XenElvisPelvis</spawnThingOnRemoved>
+
+</HediffDef>
+
+
+      <HediffDef ParentName="ImplantHediffXen">
+      <defName>XXBiogenicArm</defName>
+      <label>Ultra biogenic arm</label>
+      <spawnThingOnRemoved>XBiogenicArm</spawnThingOnRemoved>
+      <addedPartProps>
+         <partEfficiency>1.2</partEfficiency>
+      </addedPartProps>
+      <stages>
+		<li>
+         <capMods>
+            <li>
+               <capacity>Manipulation</capacity>
+               <offset>0.5</offset>
+            </li>
+         </capMods>
+		</li>	 
+      </stages>
+      <comps>
+         <li Class="HediffCompProperties_VerbGiver">
+            <verbs>
+               <li>
+                  <verbClass>Verb_MeleeAttack</verbClass>
+                  <defaultCooldownTime>0.15</defaultCooldownTime>
+                  <meleeDamageBaseAmount>10</meleeDamageBaseAmount>
+                  <meleeDamageDef>Scratch</meleeDamageDef>
+               </li>
+            </verbs>
+         </li>
+      </comps>
+   </HediffDef>
+
+</Defs>

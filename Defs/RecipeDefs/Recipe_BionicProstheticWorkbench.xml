@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecipeDefs>
+
+	<RecipeDef Abstract="True" Name="RecipeBiogenic">
+		<workSpeedStat>SmithingSpeed</workSpeedStat>
+		<soundWorking>EPOEAssembling</soundWorking>
+		<unfinishedThingDef>UnfinishedProsthesis</unfinishedThingDef>
+		<workSkill>Crafting</workSkill>
+		<workAmount>8000</workAmount>
+		<skillRequirements>
+			<li>
+				<skill>Crafting</skill>
+				<minLevel>7</minLevel>
+			</li>
+		</skillRequirements>
+	</RecipeDef>
+
+	<RecipeDef ParentName="RecipeBiogenic">
+		<defName>CreateBiogenicEye</defName>
+		<label>Craft biogenic eye</label>
+		<description>Crafts a biogenic eye from extracted DNA.</description>
+		<jobString>Crafting biogenic.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>DNA</li>
+					</thingDefs>
+				</filter>
+				<count>55</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>DNA</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<BiogenicEye>1</BiogenicEye>
+		</products>
+	</RecipeDef>
+
+
+
+	<RecipeDef ParentName="RecipeBiogenic">
+		<defName>CreateBiogenicArm</defName>
+		<label>Craft biogenic arm</label>
+		<description>Upgrades a simple prosthetic arm using extracted DNA.</description>
+		<jobString>Crafting biogenic.</jobString>
+		<products>
+			<BiogenicArm>1</BiogenicArm>
+		</products>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>DNA</li>
+					</thingDefs>
+				</filter>
+				<count>65</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>DNA</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</RecipeDef>
+	
+		<RecipeDef ParentName="RecipeBiogenic">
+		<defName>CreateBiogenicArm</defName>
+		<label>Craft biogenic arm</label>
+		<description>Upgrades a simple prosthetic arm using extracted DNA.</description>
+		<jobString>Crafting biogenic.</jobString>
+		<products>
+			<XBiogenicArm>1</XBiogenicArm>
+		</products>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>DNA</li>
+					</thingDefs>
+				</filter>
+				<count>65</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>DNA</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</RecipeDef>
+
+	<RecipeDef ParentName="RecipeBiogenic">
+		<defName>CreateBiogenicHand</defName>
+		<label>Craft biogenic hand</label>
+		<description>Upgrades a simple prosthetic hand using extracted DNA.</description>
+		<jobString>Crafting biogenic.</jobString>
+		<workSpeedStat>SmithingSpeed</workSpeedStat>
+		<products>
+			<BiogenicHand>1</BiogenicHand>
+		</products>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>DNA</li>
+					</thingDefs>
+				</filter>
+				<count>20</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>DNA</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</RecipeDef>
+
+	<RecipeDef ParentName="RecipeBiogenic">
+		<defName>CreateBiogenicFoot</defName>
+		<label>Craft biogenic foot</label>
+		<description>Upgrades a simple prosthetic foot using extracted DNA.</description>
+		<jobString>Crafting biogenic.</jobString>
+		<products>
+			<BiogenicFoot>1</BiogenicFoot>
+		</products>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>DNA</li>
+					</thingDefs>
+				</filter>
+				<count>30</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>DNA</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</RecipeDef>
+
+	<RecipeDef ParentName="RecipeBiogenic">
+		<defName>CreateBiogenicLeg</defName>
+		<label>Craft biogenic leg</label>
+		<description>Upgrades a simple prosthetic leg using plasteel and components.</description>
+		<jobString>Crafting biogenic.</jobString>
+		<products>
+			<BiogenicLeg>1</BiogenicLeg>
+		</products>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>DNA</li>
+					</thingDefs>
+				</filter>
+				<count>45</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>DNA</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</RecipeDef>
+
+	<RecipeDef ParentName="RecipeBiogenic">
+		<defName>CreateBiogenicEar</defName>
+		<label>Craft biogenic ear</label>
+		<description>Crafts a biogenic ear from extracted DNA.</description>
+		<jobString>Crafting biogenic.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>DNA</li>
+					</thingDefs>
+				</filter>
+				<count>45</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>DNA</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<BiogenicEar>1</BiogenicEar>
+		</products>
+	</RecipeDef>
+
+	<RecipeDef ParentName="RecipeBiogenic">
+		<defName>CreateBiogenicJaw</defName>
+		<label>Craft biogenic jaw</label>
+		<description>Crafts a biogenic jaw from steel and extracted DNA.</description>
+		<jobString>Crafting biogenic.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>DNA</li>
+					</thingDefs>
+				</filter>
+				<count>45</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>DNA</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<BiogenicJaw>1</BiogenicJaw>
+		</products>
+	</RecipeDef>
+
+	<RecipeDef ParentName="RecipeBiogenic">
+		<defName>CreateBiogenicSpine</defName>
+		<label>Craft biogenic spine</label>
+		<description>Crafts a biogenic spine from extracted DNA.</description>
+		<jobString>Crafting biogenic.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>DNA</li>
+					</thingDefs>
+				</filter>
+				<count>75</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>DNA</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<BiogenicSpine>1</BiogenicSpine>
+		</products>
+	</RecipeDef>
+	
+		<RecipeDef ParentName="RecipeBiogenic">
+		<defName>CreateBiogenicLung</defName>
+		<label>Craft biogenic lung</label>
+		<description>Crafts a biogenic lung from extracted DNA.</description>
+		<jobString>Crafting biogenic.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>DNA</li>
+					</thingDefs>
+				</filter>
+				<count>75</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>DNA</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<BiogenicLung>1</BiogenicLung>
+		</products>
+	</RecipeDef>
+	
+		<RecipeDef ParentName="RecipeBiogenic">
+		<defName>CreateBiogenicHeart</defName>
+		<label>Craft biogenic heart</label>
+		<description>Crafts a biogenic heart from extracted DNA.</description>
+		<jobString>Crafting biogenic.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>DNA</li>
+					</thingDefs>
+				</filter>
+				<count>75</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>DNA</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<BiogenicHeart>1</BiogenicHeart>
+		</products>
+	</RecipeDef>
+	
+		<RecipeDef ParentName="RecipeBiogenic">
+		<defName>CreateBiogenicKidney</defName>
+		<label>Craft biogenic kidney</label>
+		<description>Crafts a biogenic kidney from extracted DNA.</description>
+		<jobString>Crafting biogenic.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>DNA</li>
+					</thingDefs>
+				</filter>
+				<count>75</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>DNA</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<BiogenicKidney>1</BiogenicKidney>
+		</products>
+	</RecipeDef>
+	
+		<RecipeDef ParentName="RecipeBiogenic">
+		<defName>CreateBiogenicLiver</defName>
+		<label>Craft biogenic liver</label>
+		<description>Crafts a biogenic liver from extracted DNA.</description>
+		<jobString>Crafting biogenic.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>DNA</li>
+					</thingDefs>
+				</filter>
+				<count>75</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>DNA</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<BiogenicLiver>1</BiogenicLiver>
+		</products>
+	</RecipeDef>
+	
+		<RecipeDef ParentName="RecipeBiogenic">
+		<defName>CreateBiogenicStomach</defName>
+		<label>Craft biogenic stomach</label>
+		<description>Crafts a biogenic stomach from extracted DNA.</description>
+		<jobString>Crafting biogenic.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>DNA</li>
+					</thingDefs>
+				</filter>
+				<count>75</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>DNA</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<BiogenicStomach>1</BiogenicStomach>
+		</products>
+	</RecipeDef>
+	
+		<RecipeDef ParentName="RecipeBiogenic">
+		<defName>CreateEnhancedBrain</defName>
+		<label>Craft enhanced brain</label>
+		<description>Crafts a brain enhancement kit from extracted DNA.</description>
+		<jobString>Crafting biogenic.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>DNA</li>
+					</thingDefs>
+				</filter>
+				<count>75</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>DNA</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<EnhancedBrain>1</EnhancedBrain>
+		</products>
+	</RecipeDef>
+
+		<RecipeDef ParentName="RecipeBiogenic">
+		<defName>CreateGeneTherapy</defName>
+		<label>Craft gene therapy kit</label>
+		<description>Crafts a gene therapy kit from extracted DNA.</description>
+		<jobString>Crafting biogenic.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>DNA</li>
+					</thingDefs>
+				</filter>
+				<count>75</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>DNA</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Genetherapykit>1</Genetherapykit>
+		</products>
+	</RecipeDef>
+	
+</RecipeDefs>

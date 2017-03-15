@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Resources>
+
+
+	<ThingDef ParentName="ResourceBase">
+		<defName>DNA</defName>
+		<label>Extracted DNA</label>
+		    <description>DNA, amino acids, and other materials for Bio-Engineering.</description>
+		<graphicData>
+			<texPath>DNA/DNA</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		    <stackLimit>75</stackLimit>
+		<statBases>
+			<MarketValue>15</MarketValue>
+		</statBases>
+	<thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+	<tradeTags>
+      <li>Exotic</li>
+    </tradeTags>
+	</ThingDef>
+
+</Resources>
+
+
+
+
+
+

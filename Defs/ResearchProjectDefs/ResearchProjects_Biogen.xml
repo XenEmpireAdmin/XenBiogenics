@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ResearchProjectDefs>
+
+	<ResearchProjectDef>
+		<defName>Biogenics</defName>
+		<label>biogenics</label>
+		<description>Bio-Engineering research!  Unlock the secrets of the genome!</description>
+		<baseCost>3500</baseCost>
+		<techLevel>Spacer</techLevel>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<prerequisites>
+			<li>SimpleProsthetics</li>
+		</prerequisites>
+	</ResearchProjectDef>
+
+</ResearchProjectDefs>

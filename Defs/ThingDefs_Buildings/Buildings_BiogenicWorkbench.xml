@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ThingDefs>
+   
+   <ThingDef ParentName="BenchBase">
+      <DefName>TableBiogenics</DefName>
+      <label>biogenics workbench</label>
+      <ThingClass>Building_WorkTable</ThingClass>
+      <Description>A bio-engineering lab, compressed into a single workspace. SCIENCE!</Description>
+      <graphicData>
+         <texPath>BodyParts/Organ</texPath>
+         <graphicClass>Graphic_Multi</graphicClass>
+         <drawSize>(3.5,1.5)</drawSize>
+      </graphicData>
+      <CostList>
+         <Steel>150</Steel>
+         <Component>3</Component>
+      </CostList>
+      <AltitudeLayer>Building</AltitudeLayer>
+      <fillPercent>0.5</fillPercent>
+      <useHitPoints>True</useHitPoints>
+      <statBases>
+         <WorkToMake>1500</WorkToMake>
+         <MaxHitPoints>200</MaxHitPoints>
+         <Flammability>1.0</Flammability>
+         <Cleanliness>2</Cleanliness>
+      </statBases>
+      <Size>(3,1)</Size>
+      <DesignationCategory>Production</DesignationCategory>
+      <Passability>PassThroughOnly</Passability>
+      <pathCost>70</pathCost>
+      <hasInteractionCell>True</hasInteractionCell>
+      <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+      <surfaceType>Item</surfaceType>
+      <recipes>
+         <li>CreateBiogenicArm</li>
+         <li>CreateBiogenicLeg</li>
+         <li>CreateBiogenicHand</li>
+         <li>CreateBiogenicFoot</li>
+         <li>CreateBiogenicSpine</li>
+         <li>CreateBiogenicEye</li>
+         <li>CreateBiogenicEar</li>
+         <li>CreateBiogenicJaw</li>
+		 <li>CreateEnhancedBrain</li>
+		 <li>CreateBiogenicHeart</li>
+		 <li>CreateBiogenicLung</li>
+		 <li>CreateBiogenicKidney</li>
+		 <li>CreateBiogenicLiver</li>
+		 <li>CreateBiogenicStomach</li>
+		 <li>CreateGeneTherapy</li>
+		 
+      </recipes>
+      <inspectorTabs>
+         <li>ITab_Bills</li>
+      </inspectorTabs>
+      <comps>
+         <li Class="CompProperties_Power">
+            <compClass>CompPowerTrader</compClass>
+            <startElectricalFires>true</startElectricalFires>
+            <basePowerConsumption>450</basePowerConsumption>
+         </li>
+         <li Class="CompProperties_Flickable"/>
+         <li Class="CompProperties_AffectedByFacilities">
+            <linkableFacilities>
+               <li>ToolCabinet</li>
+            </linkableFacilities>
+         </li>
+         <li Class="CompProperties_Breakdownable"/>
+      </comps>
+      <building>
+         <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+      </building>
+      <constructEffect>ConstructMetal</constructEffect>
+      <researchPrerequisites>
+         <li>Biogenics</li>
+      </researchPrerequisites>
+      <placeWorkers>
+         <li>PlaceWorker_ShowFacilitiesConnections</li>
+      </placeWorkers>
+   </ThingDef>
+   
+</ThingDefs>

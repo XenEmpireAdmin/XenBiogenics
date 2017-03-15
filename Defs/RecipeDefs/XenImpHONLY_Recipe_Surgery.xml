@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecipeDefs>
+
+
+<RecipeDef ParentName="SurgeryBiogenic">
+<defName>PFInstallVATS</defName>
+<label>Install VATS Implant</label>
+<description>Installs a VATS Implant.</description>
+<workerClass>Recipe_InstallImplant</workerClass>
+<jobString>Installing VATS Implant</jobString>
+<recipeUsers>
+<li>Human</li>
+</recipeUsers>
+<workAmount>2000</workAmount>
+<ingredients>
+<li>
+<filter>
+<categories>
+<li>Medicine</li>
+</categories>
+</filter>
+<count>1</count>
+</li>
+<li>
+<filter>
+<thingDefs>
+<li>PFVATSImplant</li>
+</thingDefs>
+</filter>
+<count>1</count>
+</li>
+</ingredients>
+<fixedIngredientFilter>
+<categories>
+<li>Medicine</li>
+</categories>
+<thingDefs>
+<li>PFVATSImplant</li>
+</thingDefs>
+</fixedIngredientFilter>
+<appliedOnFixedBodyParts>
+<li>Rib1</li>
+<li>Rib</li>
+</appliedOnFixedBodyParts>
+<addsHediff>PFVATS</addsHediff>
+</RecipeDef>
+
+	<RecipeDef ParentName="SurgeryBiogenic">
+		<defName>InstallXenBionicLeg</defName>
+		<label>install xen bionic leg</label>
+		<description>Installs xen bionic leg.</description>
+		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+		<jobString>Installing xen bionic leg.</jobString>
+		<recipeUsers>
+			<li>Human</li>
+		</recipeUsers>
+		<workAmount>1000</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>XenBionicLeg</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>XenBionicLeg</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>LeftLeg</li> 
+			<li>RightLeg</li> 
+		</appliedOnFixedBodyParts>
+		<addsHediff>XenBionicLeg</addsHediff>
+	</RecipeDef>
+
+	<RecipeDef ParentName="SurgeryBiogenic">
+<defName>InstallElvisX</defName>
+<label>Install Elvis Pelvis X</label>
+<description>Installs a Bionic Rockabilly Pelvis.</description>
+<workerClass>Recipe_InstallImplant</workerClass>
+<jobString>Aint' nothin' but a hound dog...</jobString>
+<recipeUsers>
+<li>Human</li>
+</recipeUsers>
+<workAmount>2000</workAmount>
+<ingredients>
+<li>
+<filter>
+<categories>
+<li>Medicine</li>
+</categories>
+</filter>
+<count>1</count>
+</li>
+<li>
+<filter>
+<thingDefs>
+<li>XenElvisPelvis</li>
+</thingDefs>
+</filter>
+<count>1</count>
+</li>
+</ingredients>
+<fixedIngredientFilter>
+<categories>
+<li>Medicine</li>
+</categories>
+<thingDefs>
+<li>XenElvisPelvis</li>
+</thingDefs>
+</fixedIngredientFilter>
+<appliedOnFixedBodyParts>
+<li>Pelvis</li>
+</appliedOnFixedBodyParts>
+<addsHediff>XenPelvis</addsHediff>
+</RecipeDef>
+	
+	
+</RecipeDefs>
