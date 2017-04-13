@@ -68,7 +68,7 @@
 	</RecipeDef>
 	
 		<RecipeDef ParentName="RecipeBiogenic">
-		<defName>CreateBiogenicArm</defName>
+		<defName>CreateXBiogenicArm</defName>
 		<label>Craft biogenic arm</label>
 		<description>Upgrades a simple prosthetic arm using extracted DNA.</description>
 		<jobString>Crafting biogenic.</jobString>
